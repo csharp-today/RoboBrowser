@@ -6,8 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="cef.redist.x64" Version="79.1.36" PrivateAssets="None" />
-    <PackageReference Include="cef.redist.x86" Version="79.1.36" PrivateAssets="None" />
     <PackageReference Include="CefSharp.Common" Version="79.1.360" PrivateAssets="None" />
     <PackageReference Include="CefSharp.OffScreen" Version="79.1.360" PrivateAssets="None" />
   </ItemGroup>
