@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="CefSharp.Common" Version="79.1.360" PrivateAssets="None" />
-    <PackageReference Include="CefSharp.OffScreen" Version="79.1.360" PrivateAssets="None" />
+    <PackageReference Include="CefSharp.OffScreen" Version="98.1.210" PrivateAssets="None" />
   </ItemGroup>
 
 </Project>
