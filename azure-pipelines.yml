@@ -10,8 +10,12 @@ pool:
   vmImage: windows-latest
 
 steps:
+- task: NuGetAuthenticate@1
+  inputs:
+    forceReinstallCredentialProvider: true
 - script: powershell .\build.ps1
   env:
+    FeedUrl: $(FeedUrl)
     FeedUser: $(FeedUser)
     FeedSecret: $(FeedSecret)
   displayName: Run Nuke
