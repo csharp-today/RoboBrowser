@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using RoboBrowser.CefSharpInitialization;
+using System.Threading.Tasks;
 
 namespace RoboBrowser
 {
@@ -8,9 +9,15 @@ namespace RoboBrowser
 
         public async Task<IBrowser> GetBrowserAsync()
         {
+            await CefSharpGlobalInitializer.InitializeCef();
+
             var browser = new Browser(Verbose);
             await browser.InitializeAsync();
+
             return browser;
         }
+
+        public Task ShutdownAsync() =>
+            CefSharpGlobalInitializer.ShutdownCef();
     }
 }
