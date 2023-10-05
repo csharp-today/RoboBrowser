@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6</TargetFramework>
@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CefSharp.Common.NETCore" Version="98.1.210" />
+    <PackageReference Include="CefSharp.Common.NETCore" Version="117.2.20" />
     <PackageReference Include="CefSharp.OffScreen" Version="98.1.210" PrivateAssets="None" />
   </ItemGroup>
 
